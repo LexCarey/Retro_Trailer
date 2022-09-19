@@ -1,0 +1,26 @@
+.flex{
+    display: flex;
+}
+
+.justify-center{
+    justify-content: center;
+}
+
+.header{
+    width: 100%;
+    background-color: rgb(245, 245, 216);
+    color: rgb(207, 194, 162);
+    font-family: 'Lobster', cursive;
+    font-size: 1.7em;
+}
+
+.header div{
+    width: 125px;
+    padding: 23px 0;
+    cursor: pointer;
+}
+
+.header div:hover{
+    transition: 350ms;
+    background-color: rgb(252, 252, 235);
+}
