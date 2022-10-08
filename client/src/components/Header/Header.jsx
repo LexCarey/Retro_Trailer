@@ -4,9 +4,9 @@ import './Header.css'
 const Header = () => {
     return (
         <div className='header flex justify-center'>
-            <div>Home</div>
-            <div>Info</div>
-            <div>Contact</div>
+            <div className='flex' onClick={() => document.getElementById('home').scrollIntoView()}>Home</div>
+            <div className='flex' onClick={() => document.getElementById('info').scrollIntoView()}>Info</div>
+            <div className='flex'>Contact</div>
         </div>
     )
 }
