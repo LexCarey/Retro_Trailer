@@ -49,10 +49,10 @@ const images = [
 
 const ImageButton = styled(ButtonBase)(({ theme }) => ({
     position: 'relative',
-    height: '100vh',
+    height: '80vh',
     [theme.breakpoints.down('sm')]: {
         width: '100% !important', // Overrides inline-style
-        height: '80vh',
+        height: '70vh',
     },
     '&:hover, &.Mui-focusVisible': {
         zIndex: 1,
@@ -88,7 +88,7 @@ const Image = styled('span')(({ theme }) => ({
     alignItems: 'center',
     justifyContent: 'center',
     fontSize: '50',
-    color: theme.palette.common.white,
+    color: 'rgb(255, 252, 241)',
 }));
 
 const ImageBackdrop = styled('span')(({ theme }) => ({
@@ -114,7 +114,8 @@ const ImageMarked = styled('span')(({ theme }) => ({
 
 const Booking = () => {
     return (
-        <div className='cover' id='home'>
+        <div className='booking' id='home'>
+            <div className='carousel-div'>
             <Carousel>
             {images.map((image) => (
             <Carousel.Item>
@@ -149,6 +150,8 @@ const Booking = () => {
             </Carousel.Item>
         ))}
             </Carousel>
+            </div>
+            <img className='flower1' src={require('./all_imgs/flowers.png')} alt="" />
         </div>
     )
 }
