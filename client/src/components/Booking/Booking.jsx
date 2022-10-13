@@ -151,7 +151,6 @@ const Booking = () => {
         ))}
             </Carousel>
             </div>
-            <img className='flower1' src={require('./all_imgs/flowers.png')} alt="" />
         </div>
     )
 }

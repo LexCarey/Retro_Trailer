@@ -8,9 +8,10 @@ button{
 }
 
 .booking{
-    background-color: rgb(255, 252, 241);
+    background-color: #ece6c2;
     width: 100%;
     padding: 5vh 0 20px;
+    overflow: hidden;
 }
 
 .carousel-div{
@@ -20,32 +21,14 @@ button{
     box-shadow: black 0px 0px 10px;
 }
 
-.flower1{
-    position: absolute;
-    height: 350px;
-    top: -50px;
-    right: 4vw;
-    transform: rotate(80deg);
-    z-index: 9;
-}
-
 @media (max-width: 1600px){
     .carousel-div{
         width: 100%;
-    }
-    .flower1{
-        top: -50px;
-        right: -70px;
     }
 }
 
 @media (max-width: 600px){
     .carousel-div{
         height: 70vh;
-    }
-    .flower1{
-        height: 250px;
-        top: -25px;
-        right: -60px;
     }
 }
